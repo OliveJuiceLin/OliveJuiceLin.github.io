@@ -1,0 +1,113 @@
+/* Based on Jon Barron's website stylesheet (https://github.com/jonbarron/jonbarron_website)
+   Note: the original loads Lato from fonts.gstatic.com; that is often slow/blocked in mainland China,
+   so here we just use a system font stack with Lato first (used if installed). */
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+strong {
+  font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  margin: 0;
+  font-weight: normal;
+  font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+  font-size: 22px;
+}
+
+.papertitle {
+  font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.name {
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+  font-size: 32px;
+}
+
+span.highlight {
+  background-color: #ffffd0;
+}
+
+.colored-box {
+  color: black;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+/* ---------- Section skeleton (modeled after arthur-heng.github.io / yuyangbai.com) ---------- */
+
+/* Section title: Research Interest / Publications / Education / Service */
+.heading {
+  font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+/* Small grey note next to a heading, e.g. "(* indicates equal contribution)" */
+.heading-note {
+  font-size: 16px;
+}
+
+/* Year sub-heading inside Publications (optional) */
+.year {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* Venue line under a paper title, green like the reference sites */
+.venue {
+  color: #38b000;
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* Paper thumbnail */
+.thumb {
+  width: 100%;
+  display: block;
+}
+
+/* What's New: fixed-height scrollable box, so a long list does not push everything down */
+.news-box {
+  height: 120px;
+  overflow: auto;
+}
+
+/* Section paragraphs and lists use the same size as the body */
+li {
+  font-family: 'Lato', Verdana, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+/* Small screens: let the text wrap nicely */
+@media (max-width: 600px) {
+  .news-box {
+    height: 160px;
+  }
+}
