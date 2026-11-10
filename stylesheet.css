@@ -105,6 +105,17 @@ li {
   margin-bottom: 4px;
 }
 
+/* Obfuscated email: light-blue highlighted monospace text */
+.email {
+  background: #d6eef8;
+  font-weight: 700;
+}
+
+.email code {
+  font-family: Menlo, Consolas, 'Courier New', monospace;
+  font-size: 14px;
+}
+
 /* Small screens: let the text wrap nicely */
 @media (max-width: 600px) {
   .news-box {
